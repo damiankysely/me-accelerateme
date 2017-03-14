@@ -1,0 +1,29 @@
+<div class="content-wrapper">
+
+  <div class="content-header">
+    <div class="inner-content">
+      <img class="logo" src="assets/images/logo.png">
+      <h1>Mentors Past &amp; Present</h1>
+      <p>Learn from the smartest and most successful entrepreneurs in Manchester.</p>
+    </div>
+  </div>
+  <br>
+    <div class="pure-g">
+      <!-- With links -->
+      <div class="pure-u-1-3 pure-u-md-1-6 mentor-container" ng-repeat="person in mentors.mentors" ng-if="person.link" style="background-image:url(assets/images/mentors/{{ person.shortName }}.jpg)">
+        <a href="{{ person.link }}" target="_blank" class="mentor-details">
+          <h6>{{ person.longName }}</h6>
+          <p>{{ person.company }}</p>
+        </a>
+      </div>
+      <!-- Without links -->
+      <div class="pure-u-1-3 pure-u-md-1-6 mentor-container" ng-repeat="person in mentors.mentors" ng-if="!person.link" style="background-image:url(assets/images/mentors/{{ person.shortName }}.jpg)">
+        <a class="mentor-details">
+          <h6>{{ person.longName }}</h6>
+          <p>{{ person.company }}</p>
+        </a>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>

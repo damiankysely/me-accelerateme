@@ -1,0 +1,19 @@
+  <div class="content-wrapper">
+    <div class="content-header">
+      <div class="inner-content">
+        <img class="logo" src="assets/images/logo.png">
+        <h1>FAQs</h1>
+        <p class="text-center">Below you'll find our FAQs. Please don't hesitate to get in contact if you have any other queries.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="content-wrapper">
+  <div class="content content-row">
+    <ang-accordion class="module" close-icon-class="fa fa-chevron-right" open-icon-class="fa fa-chevron-down">
+      <collapsible-item ng-repeat="question in faqs.questions" item-title="{{ question.question }}">
+        <div>{{ question.answer }}</div>
+      </collapsible-item>
+    </ang-accordion>
+  </div>
+</div>

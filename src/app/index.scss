@@ -1,0 +1,827 @@
+/* Do not remove the comments below. It's the markers used by wiredep to inject
+   sass dependencies when defined in the bower.json of your dependencies */
+// bower:scss
+// endbower
+
+//Import the colour variables
+@import 'vars';
+@import 'mixins';
+
+body {
+  font-family: 'Raleway';
+  color: $dark;
+  background-color: $light;
+}
+
+#my_typeform {
+  display: inline-block;
+  width: 800px;
+  height: 600px;
+  margin: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Raleway';
+}
+
+b {
+  color: $subtle-darker;
+}
+
+h1 {
+  font-size: 1.6em;
+  font-family: Raleway;
+}
+
+h2 {
+  font-family: Raleway;
+}
+
+.pure-img {
+  margin: auto;
+}
+
+.pure-img-team{
+  margin: auto;
+  max-width: 192px;
+  max-height: 192px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px #888888;
+}
+
+.pure-g {
+  font-family: 'Raleway';
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.button {
+  background: $primary;
+  padding: 0.8em 1em;
+  margin-top: 1em;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  color: white;
+  @include border-radius(100px);
+
+  &:hover {
+    background: $alternate;
+  }
+}
+
+.button-light {
+  background: $light !important;
+  color: $dark !important;
+
+  &:hover {
+    background: $dark !important;
+    color: white !important;
+  }
+}
+
+.button-small {
+  font-size: 0.8em;
+}
+
+/*
+  Loading screen
+*/
+/*
+  Social network icons
+*/
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+    font-size: 4px;
+    border-radius: 50%;
+}
+ul.social-icons {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 20px;
+}
+.social-icons a {
+    color: #17a7bd;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 19px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    //background-color: #d8d8d8;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    //background-color: #d8d8d8;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.envelope{
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    //background-color: #d8d8d8;
+}
+.envelope:hover{
+  background-color: #d8d8d8;
+}
+
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d8d8d8;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    //background-color: #d8d8d8;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    //background-color: #d8d8d8;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d8d8d8;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+
+
+#loading {
+  position: fixed;
+  background: $dark;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*
+  Main menu bar
+*/
+
+.home-menu {
+  padding: 0.5em;
+  box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+  background: #fff;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  font-family: 'Raleway', sans-serif;
+  text-align: right;
+  postion: fixed;
+  z-index:1000;
+
+  .logo {
+    height: 30px;
+    display: block;
+    margin: auto;
+  }
+
+  a {
+    color: $primary;
+    border-radius: 2px;
+    text-align: center;
+  }
+
+  .pure-menu-list {
+    display: block;
+    z-index: 10000;
+  }
+
+  .pure-menu-item {
+    display: block;
+    margin-top: 0.5em;
+  }
+
+  .mobile-menu-toggle {
+    background: #eee;
+
+    a {
+      text-align: right;
+      color: $dark;
+    }
+  }
+
+  .pure-menu-selected {
+    color: white;
+  }
+
+  .button-link {
+    background: $primary;
+    color: white;
+
+    .fa {
+      margin-left: 0.2em;
+      border-radius: 20px;
+    }
+
+    &:hover {
+      background: $alternate;
+    }
+  }
+
+}
+
+.pure-menu.pure-menu-fixed {
+  /* Fixed pure-menus normally have a border at the bottom. */
+  border-bottom: none;
+  /* I need a higher z-index here because of the scroll-over effect. */
+  z-index: 100;
+}
+
+/*
+  Splash background video
+*/
+
+.splash-container {
+  background: $dark;
+  //height: 80vh;
+  width: 100%;
+}
+
+.splash {
+  /* absolute center .splash within .splash-container */
+  height: 100%;
+  margin: auto;
+  padding: 1em;
+  padding-top: 4em;
+  text-align: center;
+  color: white;
+  background-color: rgba($dark, 0.9);
+  z-index: 1000;
+  //animation: fadeIn 5s ease-in-out;
+
+  h1 {
+    font-size: 2em;
+    margin: 0 0 0.2em 0;
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+    margin: 1em;
+  }
+
+  .fa-splash {
+    font-size: 10em;
+    @include opacity(0.2);
+    &:hover {
+      @include opacity(1);
+    }
+  }
+
+  .button .fa {
+    margin-left: 0.2em;
+  }
+
+  a {
+    color: white;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+  }
+
+}
+
+@keyframes fadeIn {
+  0%   { background-color: rgba($dark, 1); }
+  100% { background-color: rgba($dark, 0.9); }
+}
+
+/*
+  Main content container
+*/
+
+.content {
+  padding: 2em;
+}
+
+.content-wrapper {
+
+  .content-header {
+    text-align: center;
+    padding: 4em 0;
+    color: white;
+    background: linear-gradient(
+      rgba($dark, 0.9),
+      rgba($dark, 0.9)
+    ), url('../assets/images/about-header.jpg') right no-repeat;
+
+    .inner-content {
+      width: 70%;
+      margin: auto;
+    }
+
+    .logo {
+      width: 300px;
+      margin-bottom: 1em;
+    }
+
+    h1 {
+      margin: 0 0 1em 0;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      margin: 0;
+    }
+  }
+
+  .logo-front-page {
+        width: 500px;
+        margin-bottom: 1em;
+        margin-top: -3em;
+        max-width: 100%;
+        height: auto;
+      }
+
+  .box {
+    padding: 1em;
+    //background: $primary;
+    color: white;
+    @include border-radius(100px);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+  }
+
+  .box-light {
+    background: $light;
+    color: $dark;
+  }
+
+  .content-title {
+    margin-top: 0;
+  }
+
+  .content-row {
+    padding: 4em 1em;
+  }
+
+  .banner-row {
+    padding: 0 2em 2em 2em;
+    background: $light;
+
+    p {
+      margin: 0;
+      display: inline;
+    }
+
+    .button {
+      margin: 0;
+      display: block;
+      font-size: 0.8em;
+      margin-top: 1em;
+    }
+  }
+
+  .row-spacing {
+    margin-bottom: 5em;
+  }
+
+  .image-row-text {
+    background: white;
+    padding: 4em 2em;
+    box-sizing: border-box;
+
+    .image-row-bullet {
+      margin: 2em 0;
+      background: $light;
+      padding: 1em;
+      @include border-radius(40px);
+      box-shadow: 5px 5px 5px #888888;
+    }
+  }
+
+  .angular-google-map-container {
+    height: 600px;
+  }
+
+  .map-background {
+    background: white;
+  }
+
+  .funding-image {
+    background: url('../assets/images/about1.jpg') center center no-repeat;
+    background: linear-gradient(
+      rgba($dark, 0.6),
+      rgba($dark, 0.6)
+    ), url('../assets/images/about1.jpg') right no-repeat;
+    background-size: cover;
+    min-height: 600px;
+  }
+
+  .module {
+    text-align: center;
+    background: white;
+    margin: 1em;
+    margin-bottom: 2em;
+    padding: 4em 2em;
+    overflow: hidden;
+    @include border-radius(80px);
+    box-shadow: 5px 5px 5px #888888;
+
+    h3 {
+      margin: 0;
+    }
+
+    .fa {
+      font-size: 10em;
+      margin-bottom: 0.1em;
+    }
+
+    .button {
+      margin: 0;
+    }
+  }
+
+  .team-module {
+    p {
+      margin: 2em 0 0 0;
+    }
+  }
+
+  .mentor-container {
+    display: inline-block;
+    box-shadow: 5px 5px 5px #888888;
+    height: 250px;
+    background: center center no-repeat;
+    background-size: cover;
+    //border-radius: 100%;
+
+
+    &:hover .mentor-details {
+      display: block;
+      //border-radius: 100%;
+    }
+
+    a.mentor-details {
+      height: 100%;
+      box-sizing: border-box;
+      padding: 1em;
+      background: $primary;
+      @include opacity(0.9);
+      display: none;
+      color: white;
+      padding-left: 30px;
+      padding-top: 60px;
+
+      h6 {
+        font-size: 1.4em;
+        font-weight: normal;
+        margin: 0;
+
+      }
+    }
+  }
+
+}
+
+/*
+  Footer
+*/
+footer {
+  background: $subtle-darker;
+  color: white;
+  font-size: 0.8em;
+
+  .fa {
+    font-size: 1.4em;
+    margin-left: 0.5em;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .footer-me {
+    background: white;
+    display: flex;
+    align-items: center;
+
+    a {
+      color: $secondary;
+    }
+
+    img {
+      max-height: 30px;
+    }
+
+  }
+}
+
+/*
+  Custom accordion styling
+*/
+
+.collapsible-item {
+  text-align: left;
+
+  .title {
+    padding: 1em;
+    background: $secondary;
+    color: white;
+    border: none;
+  }
+
+  .body {
+    border: solid 1px $light;
+  }
+
+  .body .content {
+    padding: 1em;
+    background: $light;
+  }
+
+  .fa {
+    display: none;
+  }
+}
+
+/*
+  Custom tooltip styling
+*/
+
+._720kb-tooltip {
+  z-index: 102;
+  background: $alternate;
+  font-family: 'Raleway', sans-serif;
+}
+
+._720kb-tooltip-caret:before {
+  border-color: $alternate;
+}
+
+/*
+  Modals styling
+*/
+
+.modal-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  z-index: 130;
+  @include border-radius(2px);
+
+  .close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 28px;
+    color: $dark;
+  }
+}
+
+.modal-fade {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  background-color: $dark;
+  width: 100%;
+  height: 100%;
+  z-index: 120;
+  @include opacity(0.8);
+}
+
+.standard-modal.ng-enter {
+  transition: opacity .5s ease-out;
+  opacity: 0;
+}
+
+.standard-modal.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.standard-modal.ng-leave {
+  transition: opacity .5s ease-out;
+  opacity: 1;
+}
+
+.standard-modal.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+
+/*
+  Custom form styling
+*/
+
+.form {
+
+  textarea, input {
+    width: 100%;
+  }
+
+}
+
+/*
+  Floating action button
+*/
+
+.floating-action-button {
+    visibility: hidden;
+    background: $primary;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 102;
+    color: white;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+    @include border-radius(2em);
+    @include opacity(0.9);
+
+    .fa {
+      font-size: 24px;
+    }
+
+    &:hover {
+      @include opacity(1);
+    }
+}
+
+/*
+  Tablet and up media queries
+*/
+@media (min-width: 48em) {
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .splash {
+    padding-top: 8em;
+
+    h1 {
+      font-size: 3.2em;
+    }
+  }
+
+  .home-menu {
+    .logo {
+      height: 30px;
+      margin-left: 1em;
+      float: left;
+    }
+
+    .pure-menu-list {
+      display: inline-block;
+    }
+
+    .pure-menu-item {
+      display: inline-block;
+      margin-top: 0;
+    }
+
+  }
+
+  .content-wrapper {
+    .content-header {
+      padding: 8em 0;
+
+      .inner-content {
+        width: 80%;
+      }
+    }
+
+    .content-row {
+      padding: 2em 2em;
+    }
+
+    .box {
+      padding: 2em;
+    }
+
+    .banner-row {
+      p {
+        display: inline;
+      }
+
+      .button {
+        display: inline-block;
+        margin-left: 1em;
+      }
+    }
+  }
+
+  .content {
+    padding: 2em;
+  }
+
+  .modal-content {
+    left: 25%;
+    top: 10%;
+    margin-bottom: 10%;
+    padding: 2em;
+    width: 50%;
+  }
+
+  .floating-action-button {
+    visibility: visible;
+  }
+
+  .collapsible-item {
+    .fa {
+      display: block;
+    }
+  }
+
+}
+
+/* Do not remove the comments below. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+// injector
+// endinjector
